@@ -1,4 +1,4 @@
-bom.movie_gross.csv
-im.db
-rt.movie_info.tsv
-rt.reviews.tsv
+data/bom.movie_gross.csv
+data/im.db
+data/rt.movie_info.tsv
+data/rt.reviews.tsv
