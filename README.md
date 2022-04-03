@@ -9,11 +9,11 @@ While it's easy to be mesmerized by individual box office statistics, a rational
 
 I define the market size of a film genre as the total box office grosses of films belonging to that genre and I define a genre's Expected Return On Investment as the difference of total box office grosses and production budgets across the genre, divided by the genre's production budget total.
 
-In addition to calculating estimates of market size and ROI for genres as a whole, I also calculate estimates of market share and profitability for productions of different sizes, focusing on seven, eight, and nine figure productions. 
+In addition to calculating estimates of market size and ROI for genres as a whole, I also calculate estimates of market size and profitability for productions of different sizes, focusing on seven, eight, and nine figure productions. 
 
 ## Methodology
 
-To calculate estimates for these parameters, I used three data sets. The first data set, from the-numbers.com, includes the production budgets, and domestic and worldwide grosses for almost six thousand movies from 1915 to 2020. I used two additional databases, TheMovieDB and IMDB, to find genre information for almost a third of these films, and limited my sample to only movies made from 2000 to 2020--yielding a data set of 1691 movies. 
+To calculate estimates for these parameters, I used three data sets. The first data set, from [the-numbers.com](https://www.the-numbers.com/), includes the production budgets, and domestic and worldwide grosses for almost six thousand movies from 1915 to 2020. I used two additional databases, from [TheMovieDB](https://www.themoviedb.org/) and [IMDB](https://www.imdb.com/), to find genre information for almost a third of these films, and limited my sample to only movies made from 2000 to 2020--yielding a data set of 1691 movies. 
 
 In order to identify and correct for bias in this smaller data set, I identified the factors by which the gross and ROI statistics had been scaled--both for the data set as a whole and for productions of different sizes. Overall, the reduced data set over-represented movies with higher ROIs--it's likely that because they were more successful they were more likely to have genre information attached in the other databases. By dividing the gross and ROI statistics for each segment of the data by the appropriate scaling factor, I was able to correct for my data set's bias towards profitable films, yielding a more realistic estimate of Expected Return on Investment.
 
@@ -59,3 +59,11 @@ Finally, Horror and Mystery movies become less profitable as production costs in
 - For movies in genre categories 1 and 2 (where bigger productions correspond to increasing Expected ROI), investment should be concentrated in a small number of large productions. 
 - For movies in genre category 3 (Horror and Mystery), investment should be spread out over a larger number of small productions. This is because low-budget Horror and Mystery is a small winner-take-all market, in which the lackluster performance of the majority of films is made up for many times over by the astronomical  profits of a few big hits. 
 - Investment in small category 3 films is a good way to find talented new filmmakers who might then be given the opportunity to direct larger films in categories 1 and 2. This matches the career trajectory of filmmakers like Peter Jackson - who began his career with low budget horror movies like *Dead Alive* (made for only $3 million) before going on to direct the *Lord of the Rings* trilogy.
+
+## Further Analysis
+- Many films in this database have multiple genre labels. In order to determine what type of Adventure movies we should be producing, we should determine how many times each other genre label appears in the set of adventure movies, and for each of these secondary genre labels, calculate the total gross receipts and Expected Return on Investment.
+- For each genre category we should look at more fine-grained measurements of production size. This will give us a better understanding of the optimal level of investment. Movies that are most profitable at investment levels above $100 million might start tapering in profitability above a certain point, but we have no way of knowing this based on our current production size categories.
+
+## More Information
+
+For the code used in my data collection and analysis, you can check my Jupyter Notebook linked [here](https://github.com/DavidKRichter/dsc-film-project/blob/main/index.ipynb).
