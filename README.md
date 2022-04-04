@@ -1,4 +1,5 @@
 # How Should a Film Studio Invest Its Capital?
+David Richter, Flatiron School
 
 ## Questions
 
